@@ -1,0 +1,170 @@
+.flex-container {
+    /*estilizacao geral*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: Arial;
+    font-size: 14px;
+    color: #3f3f3f;
+    background: #F29D35;
+    /*plano de fundo*/
+    position: absolute;
+    /*movimentacao considerando o ponto inicial da pagima, para possibilitar a sobreposicao dos triangulos*/
+    Z-index: 0;
+    /*embaixo de todo empilhamento*/
+}
+
+.flex-container p {
+    /*estilizacao para todos os paragrafos da pagina*/
+    margin-bottom: 4px;
+    text-align: justify;
+}
+
+#triangulo1 {
+    height: 0px;
+    /*zerados para gerar a uniao das pontas das bordas*/
+    width: 0px;
+    left: 0;
+    /*inicia a margem esquerda para direita*/
+    border-style: solid;
+    border-color: #0000 #1DBABF;
+    /*cor das bordas que formam um triangulo*/
+    border-width: 0px 0px 200px 800px;
+    /*espessura das bordas para gerar o triangulo*/
+    position: absolute;
+    Z-index: 2;
+    /*empilhado por ultimo*/
+}
+
+#triangulo2 {
+    height: 0px;
+    /*zerados para gerar a uniÃ£o das pontas das bordas*/
+    width: 0px;
+    right: 0;
+    /*inicia a margem direita para esquerda*/
+    border-style: solid;
+    border-color: #0000 #084EA6;
+    border-width: 0px 800px 200px 0px;
+    /*espessura das bordas para gerar o triangulo*/
+    position: absolute;
+    /*movimentacao considerando o ponto inicial da pagima*/
+    Z-index: 2;
+    /*empilhado por ultimo*/
+}
+
+
+.esquerda img {
+    position: relative;
+    Z-index: 2;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    border-radius: 100%;
+    border: 4px solid #FFFFFF;
+
+}
+
+i:after {
+    content: "\00A0";
+    /*incluir espaco depois de cada icone, codigo CSS*/
+}
+
+#email,
+#endereco {
+    color: white;
+    font-weight: inherit;
+}
+
+.icones {
+    font-size: 30;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+i {
+    color: #fff;
+}
+
+.barracinza {
+    width: 100%;
+    height: 15px;
+    background: lightgray;
+    border-radius: 10px 10px 10px 10px;
+    /*arredondar cada ponta da barra*/
+}
+
+#barra {
+    font-size: 10px;
+    color: white;
+    height: 15px;
+    background: #3D8DF2;
+    text-align: end;
+    border-radius: 10px 00px 00px 10px;
+    /*arredondar cada ponta da barra*/
+}
+
+.esquerda label {
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.direita label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.direita h5 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.direita h2 {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.direita hr {
+    margin-top: 20px;
+    border-bottom: 2px solid #CBD0F5;
+}
+
+.lista li {
+    margin: 7;
+    list-style-type: square;
+    /*marcador quadrado*/
+    list-style-position: outside;
+    text-align: justify;
+}
+
+a {
+    color: #73551D;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.esquerda {
+    width: 25%;
+    background-color: #A724F2;
+    color: #FFFFFF;
+    padding: 15px;
+    /*margem interna*/
+}
+
+.direita {
+    width: 72%;
+    background-color: #FFFFFF;
+    padding: 15px;
+    /*margem interna*/
+}
