@@ -1,4 +1,4 @@
 # curriculo
 Meu Curriculo
 
-Neste projeto, temos os arquivos arquivos em HTML e CSS para a formular um Curriculo
+Neste projeto, temos os arquivos com os códigos em HTML e CSS que juntos formulam um Curriculo
